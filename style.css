@@ -110,3 +110,10 @@ details p { color: var(--muted); margin: 12px 0 0; }
   .cards, .cards--2, .how { grid-template-columns: 1fr; }
   .section { padding: 48px 0; }
 }
+
+.about { display: grid; grid-template-columns: 340px 1fr; gap: 48px; align-items: start; }
+.about__photo { border-radius: var(--radius); aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
+@media (max-width: 860px) {
+  .about { grid-template-columns: 1fr; gap: 24px; }
+  .about__photo { max-width: 320px; }
+}
