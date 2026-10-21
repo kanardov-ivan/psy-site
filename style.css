@@ -117,3 +117,11 @@ details p { color: var(--muted); margin: 12px 0 0; }
   .about { grid-template-columns: 1fr; gap: 24px; }
   .about__photo { max-width: 320px; }
 }
+
+/* Страница оценки */
+.hero--page { padding-bottom: 32px; }
+.toc { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 24px; }
+.toc a { color: var(--accent); }
+.method__lead { font-size: 1.1rem; }
+.method__price { margin-top: 24px; }
+.method__price span { display: block; font-weight: 400; color: var(--muted); margin-top: 4px; }
