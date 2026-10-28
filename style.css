@@ -125,3 +125,10 @@ details p { color: var(--muted); margin: 12px 0 0; }
 .method__lead { font-size: 1.1rem; }
 .method__price { margin-top: 24px; }
 .method__price span { display: block; font-weight: 400; color: var(--muted); margin-top: 4px; }
+
+/* Статьи */
+.article h2 { margin-top: 1.6em; }
+.article .eyebrow a { color: inherit; text-decoration: none; }
+.article-card { display: block; text-decoration: none; color: var(--text); margin-bottom: 20px; }
+.article-card:hover { border-color: var(--accent); }
+.article-card h3 { color: var(--text); }
