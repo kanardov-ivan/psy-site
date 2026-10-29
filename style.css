@@ -132,3 +132,24 @@ details p { color: var(--muted); margin: 12px 0 0; }
 .article-card { display: block; text-decoration: none; color: var(--text); margin-bottom: 20px; }
 .article-card:hover { border-color: var(--accent); }
 .article-card h3 { color: var(--text); }
+
+/* Тест */
+.quiz-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
+.quiz__progress, .quiz__total { height: 8px; background: var(--bg-alt); border-radius: 999px; overflow: hidden; }
+.quiz__progress span, .quiz__total span { display: block; height: 100%; background: var(--accent); width: 0; transition: width .3s; }
+.quiz__total { height: 12px; margin: 8px 0 4px; }
+.quiz__total--thin { height: 8px; }
+.quiz__total .is-ok { background: #3c8d5a; }
+.quiz__total .is-warn { background: #d9a227; }
+.quiz__total .is-bad { background: #c2493d; }
+.quiz__q { font-size: 1.35rem; min-height: 3.2em; margin-top: 8px; }
+.quiz__answers { display: grid; gap: 10px; }
+.quiz__answer { font: inherit; text-align: left; padding: 14px 18px; border: 2px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--text); cursor: pointer; transition: border-color .15s, background .15s; }
+.quiz__answer:hover { border-color: var(--accent); }
+.quiz__answer.is-selected { border-color: var(--accent); background: var(--bg-alt); }
+.quiz__back { font: inherit; font-size: 15px; background: none; border: 0; color: var(--muted); margin-top: 16px; cursor: pointer; padding: 0; }
+.quiz__scale { margin-bottom: 16px; }
+.quiz__scale-head { display: flex; justify-content: space-between; }
+.quiz__scale .small { margin: 4px 0 0; }
+.quiz__cta { background: var(--bg-alt); border-radius: var(--radius); padding: 24px; margin: 28px 0 20px; text-align: center; }
+@media (max-width: 860px) { .quiz-card { padding: 20px; } }
